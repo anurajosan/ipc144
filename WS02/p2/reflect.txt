@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Anuraj Singh Osan
+Student ID#: 165546235
+Email      : asosan@myseneca.ca
+Section    : NBB
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. A) In the first the output was a = 4 and in second the output was a = 3.
+   B) There is a difference of one because of the increment in the first example "a++" is been done after the printf so its adding and then showing the output and in the second one "a++" is after the printf so its showing and then adding the number.
+
+2.when we use float price1= 10.11f ,the number is stored with less precision than double 
+
+3. 
+
+i) In this an integer is divide by an integer, and this will remove all the values after the decimal point. Due to the format specifier '%lf', the result which is supposed to be an integer is implicitly coerced to a double.
+
+ii) In this example, an integer is divided by an integer and the format specifier is correctly matched with the data type. 
+
+iii) In this example, again an integer is being divided by an integer, but if we look closely the variable money is being explicitly casted to a double. This casting leads the result to be a double, which is correctly matched with the format specifier '%lf'.
+
+iv) In this example, again the money variable is being explicitly casted to a double. But the mismatched format specifier while printing causes the value to be lost.
