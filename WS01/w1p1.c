@@ -29,6 +29,5 @@ int main()
     printf("\n\nAnuraj Singh Osan");
     printf("\n165546235");
 
-
     return 0;
 }
