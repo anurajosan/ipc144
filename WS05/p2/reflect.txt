@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Anuraj Singh Osan
+Student ID#: 165546235
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. no, we can not because in rating we don't know how many times the error is going to happen but we can use it for-loop in the dates cause we know the dates are till 3 
+
+2.we can use if-else-if condition or switch case,I selected the switch case because it provides much better readability and manageability when dealing with multiple discrete values.
+
+3.variables and macros meaningful names that make the code easier to read and more self-explanatory. For instance, utilizing LOG_DAYS rather than 3 makes it obvious why the value is there. Secondly, the chance of error goes to very low. Thirdly, macros are pre-processor so it gets much better use. Last if we want to change the value we wouldn't have to change every value can just change the macro and every value would change.

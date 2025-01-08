@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Anuraj Singh Osan
+Student ID#: 165546235
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+1. The convertLbsKg function provides the conversion result from pounds to kilograms in two ways. Firstly, it returns the converted value as the function's return value, allowing the calling code to directly capture and use the result. Secondly, it uses a pointer argument to store the result in a variable provided by the caller, enabling the calling code to access the result via the pointer. This dual return mechanism offers flexibility, as it allows both immediate use of the result and storage for later use.To avoid providing two ways to return a value, we can separate the functionality into two distinct functions. One function will return the conversion result as a return value, and the other will use a pointer to store the result.
+For example-
+double convertLbsToKg(const double *pounds);
+void convertLbsToKgViaPointer(const double *pounds, double *kilograms);
+
+2.In the workshop, the functions convertLbsKg, convertLbsG, and convertLbs exhibit high cohesion and loose coupling. High cohesion is demonstrated as each function has a single, well-defined purpose: converting pounds to kilograms or grams. Loose coupling is evident because these functions do not depend on each other or on other parts of the system. They operate independently and use clearly defined interfaces, making them easy to use and modify without affecting other parts of the code. This modular design improves code maintainability and readability.
+
+3.The use of header (.h) files and corresponding source (.c) files in the workshop is a good design approach for managing application development. The header file defines the function prototypes and data structures, providing a clear interface for other parts of the program. The source file contains the actual implementation of these functions. This separation enhances code organization, making it easier to understand and maintain. For instance, in the workshop, placing the convertLbsKg function prototype in the header file and its implementation in the source file allows other parts of the program to use the function without needing to know its internal workings. This approach also facilitates better compilation management, as changes in implementation do not necessarily require recompiling all the code that depends on the interface.

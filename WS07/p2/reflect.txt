@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Anuraj Singh Osan
+Student ID#: 165546235
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+1.
+  A. struct Playerinfo
+{
+    int numLives;
+    char playerName;
+    int numTreasure;
+    int positionPlayed[MAX];
+    
+
+};
+struct Gameinfo
+{
+    int moves;
+    int pathLength;
+    int bomb[MAX];
+    int treasure[MAX];
+    int nextMove;
+};
+  B.  struct Playerinfo player = {0};
+      struct Gameinfo game = {0};
+
+int playerNumLives, gameMoves, playerNumTreasure ,gamePathLength, gameNextMove;
+char playerName; 
+int playerPositionPlayed[MAX];
+int gameBomb[MAX];
+int gameTreasure[MAX];
+
+2. The parallel arrays used in the provided code are player.positionPlayed, game.bomb, and game.treasure . These arrays are synchronized by their indices, with each index representing a specific position on the game path. player.positionPlayed tracks the status of each position as the player progresses, indicating whether the player has visited that position and what they found there. game.bomb indicates the presence of bombs at specific positions, while game.treasure marks the locations of treasures. Together, these arrays enable the game to manage and respond to the player's moves by providing immediate feedback on whether the player encounters a bomb, finds a treasure, or revisits a position, thus driving the game's logic and flow.
+
+3. if (game.treasure[game.nextMove - 1] == 1 && game.bomb[game.nextMove - 1] == 1)
+{
+    printf("===============> [!] !!! BOOOOOM !!! [&]\n");
+    printf("===============> [$] $$$ Found Treasure! $$$ [&]\n");
+    player.numLives--;  // <-- Deepest nested statement
+    player.numTreasure++;
+    player.positionPlayed[game.nextMove - 1] = 2;
+    game.moves--;
+}
+    the deepest nested statement is player.numLives--;, located within the game loop when determining the outcome of the player's next move. This statement is executed when the player encounters a bomb at their current position. The logic leading to this statement begins with initializing the game, configuring the player's attributes and the game path, including bomb and treasure placements. During gameplay, the player is prompted to enter their next move, and the game checks the game.bomb and game.treasure arrays at the specified position. If a bomb is present (game.bomb[game.nextMove - 1] == 1), the game prints a message indicating the bomb encounter and decrements the player's lives (player.numLives--). This ensures the game correctly handles and updates the player's status, reflecting the consequences of their moves.
